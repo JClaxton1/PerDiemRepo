@@ -314,6 +314,7 @@ public class MainActivity extends AppCompatActivity {
                     AuthUI.getInstance()
                             .createSignInIntentBuilder()
                             .setIsSmartLockEnabled(false, true)
+                            .setLogo(R.drawable.logo2)
                             .setAvailableProviders(Arrays.asList(
                                     new AuthUI.IdpConfig.EmailBuilder().build(),
                                     new AuthUI.IdpConfig.GoogleBuilder().build()))
