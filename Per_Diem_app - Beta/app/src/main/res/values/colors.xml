@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#073F05</color>
+
+
+    <color name="white">#ffffff</color>
+
+    <color name="primaryGreen">#073f05</color>
+    <color name="primaryBlue">#006bff</color>
+
+    <color name="secondaryGreen">#292f11</color>
+    <color name="secondaryBlue">#151D9D</color>
+
+    <color name="colorFormMasterHeaderBackground">#292f11</color>
+    <color name="colorFormMasterHeaderText">#ffffff</color>
+    <color name="colorFormMasterElementBackground">#073F05</color>
+    <color name="colorFormMasterElementTextTitle">#ffffff</color>
+    <color name="colorFormMasterElementTextValue">#ffffff</color>
+    <color name="colorFormMasterElementTextHint">#ffffff</color>
+    <color name="colorFormMasterDivider">#DDDDDD</color>
+
+
+    <color name="primaryColorOne">#FAF3DD</color>
+    <color name="primaryColorTwo">#C8D5B9</color>
+    <color name="primaryColorThree">#8FC0A9</color>
+
+
+    <color name="transparent">#80000000</color>
+
+    <color name="dark">#2C352F</color>
+
+
+
+</resources>
