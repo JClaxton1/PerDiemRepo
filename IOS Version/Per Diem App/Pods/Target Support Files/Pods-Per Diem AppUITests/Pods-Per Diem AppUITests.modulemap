@@ -1,0 +1,6 @@
+framework module Pods_Per_Diem_AppUITests {
+  umbrella header "Pods-Per Diem AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

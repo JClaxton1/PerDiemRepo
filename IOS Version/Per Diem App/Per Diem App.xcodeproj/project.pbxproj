@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69E04C8D20EB285D00462729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04C8C20EB285D00462729 /* AppDelegate.swift */; };
+		69E04C8F20EB285D00462729 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04C8E20EB285D00462729 /* FirstViewController.swift */; };
+		69E04C9120EB285D00462729 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04C9020EB285D00462729 /* SecondViewController.swift */; };
+		69E04C9420EB285D00462729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E04C9220EB285D00462729 /* Main.storyboard */; };
+		69E04C9620EB285F00462729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E04C9520EB285F00462729 /* Assets.xcassets */; };
+		69E04C9920EB285F00462729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E04C9720EB285F00462729 /* LaunchScreen.storyboard */; };
+		69E04CA420EB285F00462729 /* Per_Diem_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CA320EB285F00462729 /* Per_Diem_AppTests.swift */; };
+		69E04CAF20EB285F00462729 /* Per_Diem_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CAE20EB285F00462729 /* Per_Diem_AppUITests.swift */; };
+		69E04CC220ED591300462729 /* NewReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CC120ED591300462729 /* NewReportVC.swift */; };
+		69E04CC420ED593D00462729 /* NewCameraExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CC320ED593D00462729 /* NewCameraExpenseVC.swift */; };
+		69E04CC620ED595800462729 /* NewExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CC520ED595800462729 /* NewExpenseVC.swift */; };
+		69E04CC820ED596C00462729 /* NewMileageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CC720ED596C00462729 /* NewMileageVC.swift */; };
+		69E04CCA20EF1F2400462729 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69E04CC920EF1F2300462729 /* GoogleService-Info.plist */; };
+		69E04CCC20F0350500462729 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CCB20F0350500462729 /* CustomCell.swift */; };
+		69E04CCF20F04F4F00462729 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CCE20F04F4F00462729 /* Report.swift */; };
+		69E04CD120F076F200462729 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CD020F076F200462729 /* Expense.swift */; };
+		69E04CD320F460AD00462729 /* ExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CD220F460AD00462729 /* ExpenseDetails.swift */; };
+		BAE2000EC5A4AB0BD0DC0F19 /* Pods_Per_Diem_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B1F3574AEE9BD8E8669380 /* Pods_Per_Diem_AppUITests.framework */; };
+		E539E5A4FBA24880547C0AD0 /* Pods_Per_Diem_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE7EB4CF5111937401B6AB8 /* Pods_Per_Diem_App.framework */; };
+		EFDC3EAE876238BB0E18738C /* Pods_Per_Diem_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB239BC88828ADC4847F9516 /* Pods_Per_Diem_AppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69E04CA020EB285F00462729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69E04C8120EB285D00462729 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69E04C8820EB285D00462729;
+			remoteInfo = "Per Diem App";
+		};
+		69E04CAB20EB285F00462729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69E04C8120EB285D00462729 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69E04C8820EB285D00462729;
+			remoteInfo = "Per Diem App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04EB1CC0E49BDC9AE4A28F8A /* Pods-Per Diem AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem AppTests/Pods-Per Diem AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		192985946C2B7E9198832901 /* Pods-Per Diem AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem AppTests/Pods-Per Diem AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4EB18543398E8AAA72190DB8 /* Pods-Per Diem AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem AppUITests/Pods-Per Diem AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CE7EB4CF5111937401B6AB8 /* Pods_Per_Diem_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Per_Diem_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF1D165991948C29D324CC /* Pods-Per Diem AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem AppUITests/Pods-Per Diem AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		69B1F3574AEE9BD8E8669380 /* Pods_Per_Diem_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Per_Diem_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E04C8920EB285D00462729 /* Per Diem App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Per Diem App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E04C8C20EB285D00462729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69E04C8E20EB285D00462729 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		69E04C9020EB285D00462729 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		69E04C9320EB285D00462729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69E04C9520EB285F00462729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69E04C9820EB285F00462729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69E04C9A20EB285F00462729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E04C9F20EB285F00462729 /* Per Diem AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Per Diem AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E04CA320EB285F00462729 /* Per_Diem_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Per_Diem_AppTests.swift; sourceTree = "<group>"; };
+		69E04CA520EB285F00462729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E04CAA20EB285F00462729 /* Per Diem AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Per Diem AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E04CAE20EB285F00462729 /* Per_Diem_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Per_Diem_AppUITests.swift; sourceTree = "<group>"; };
+		69E04CB020EB285F00462729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E04CC120ED591300462729 /* NewReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReportVC.swift; sourceTree = "<group>"; };
+		69E04CC320ED593D00462729 /* NewCameraExpenseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCameraExpenseVC.swift; sourceTree = "<group>"; };
+		69E04CC520ED595800462729 /* NewExpenseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseVC.swift; sourceTree = "<group>"; };
+		69E04CC720ED596C00462729 /* NewMileageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMileageVC.swift; sourceTree = "<group>"; };
+		69E04CC920EF1F2300462729 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69E04CCB20F0350500462729 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		69E04CCE20F04F4F00462729 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		69E04CD020F076F200462729 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		69E04CD220F460AD00462729 /* ExpenseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetails.swift; sourceTree = "<group>"; };
+		8521B0FF60659018696B0BBB /* Pods-Per Diem App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App.debug.xcconfig"; sourceTree = "<group>"; };
+		8F8A3C3C378EEFD633088C56 /* Pods-Per Diem App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App.release.xcconfig"; sourceTree = "<group>"; };
+		CB239BC88828ADC4847F9516 /* Pods_Per_Diem_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Per_Diem_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69E04C8620EB285D00462729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E539E5A4FBA24880547C0AD0 /* Pods_Per_Diem_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E04C9C20EB285F00462729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDC3EAE876238BB0E18738C /* Pods_Per_Diem_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E04CA720EB285F00462729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE2000EC5A4AB0BD0DC0F19 /* Pods_Per_Diem_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55B4562B605F7F254EDEFBD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8521B0FF60659018696B0BBB /* Pods-Per Diem App.debug.xcconfig */,
+				8F8A3C3C378EEFD633088C56 /* Pods-Per Diem App.release.xcconfig */,
+				04EB1CC0E49BDC9AE4A28F8A /* Pods-Per Diem AppTests.debug.xcconfig */,
+				192985946C2B7E9198832901 /* Pods-Per Diem AppTests.release.xcconfig */,
+				4EB18543398E8AAA72190DB8 /* Pods-Per Diem AppUITests.debug.xcconfig */,
+				68DF1D165991948C29D324CC /* Pods-Per Diem AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69E04C8020EB285D00462729 = {
+			isa = PBXGroup;
+			children = (
+				69E04C8B20EB285D00462729 /* Per Diem App */,
+				69E04CA220EB285F00462729 /* Per Diem AppTests */,
+				69E04CAD20EB285F00462729 /* Per Diem AppUITests */,
+				69E04C8A20EB285D00462729 /* Products */,
+				55B4562B605F7F254EDEFBD9 /* Pods */,
+				AA1C9F6B333EBD0279B6655E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69E04C8A20EB285D00462729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69E04C8920EB285D00462729 /* Per Diem App.app */,
+				69E04C9F20EB285F00462729 /* Per Diem AppTests.xctest */,
+				69E04CAA20EB285F00462729 /* Per Diem AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69E04C8B20EB285D00462729 /* Per Diem App */ = {
+			isa = PBXGroup;
+			children = (
+				69E04CCD20F04D1900462729 /* Models */,
+				69E04C8C20EB285D00462729 /* AppDelegate.swift */,
+				69E04CD220F460AD00462729 /* ExpenseDetails.swift */,
+				69E04C8E20EB285D00462729 /* FirstViewController.swift */,
+				69E04C9020EB285D00462729 /* SecondViewController.swift */,
+				69E04CCB20F0350500462729 /* CustomCell.swift */,
+				69E04C9220EB285D00462729 /* Main.storyboard */,
+				69E04C9520EB285F00462729 /* Assets.xcassets */,
+				69E04C9720EB285F00462729 /* LaunchScreen.storyboard */,
+				69E04C9A20EB285F00462729 /* Info.plist */,
+				69E04CC120ED591300462729 /* NewReportVC.swift */,
+				69E04CC320ED593D00462729 /* NewCameraExpenseVC.swift */,
+				69E04CC520ED595800462729 /* NewExpenseVC.swift */,
+				69E04CC720ED596C00462729 /* NewMileageVC.swift */,
+				69E04CC920EF1F2300462729 /* GoogleService-Info.plist */,
+			);
+			path = "Per Diem App";
+			sourceTree = "<group>";
+		};
+		69E04CA220EB285F00462729 /* Per Diem AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				69E04CA320EB285F00462729 /* Per_Diem_AppTests.swift */,
+				69E04CA520EB285F00462729 /* Info.plist */,
+			);
+			path = "Per Diem AppTests";
+			sourceTree = "<group>";
+		};
+		69E04CAD20EB285F00462729 /* Per Diem AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69E04CAE20EB285F00462729 /* Per_Diem_AppUITests.swift */,
+				69E04CB020EB285F00462729 /* Info.plist */,
+			);
+			path = "Per Diem AppUITests";
+			sourceTree = "<group>";
+		};
+		69E04CCD20F04D1900462729 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69E04CD020F076F200462729 /* Expense.swift */,
+				69E04CCE20F04F4F00462729 /* Report.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA1C9F6B333EBD0279B6655E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CE7EB4CF5111937401B6AB8 /* Pods_Per_Diem_App.framework */,
+				CB239BC88828ADC4847F9516 /* Pods_Per_Diem_AppTests.framework */,
+				69B1F3574AEE9BD8E8669380 /* Pods_Per_Diem_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69E04C8820EB285D00462729 /* Per Diem App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E04CB320EB285F00462729 /* Build configuration list for PBXNativeTarget "Per Diem App" */;
+			buildPhases = (
+				19DF88C34532EB821DF4F52F /* [CP] Check Pods Manifest.lock */,
+				69E04C8520EB285D00462729 /* Sources */,
+				69E04C8620EB285D00462729 /* Frameworks */,
+				69E04C8720EB285D00462729 /* Resources */,
+				21C39A79929B1E59548318AA /* [CP] Embed Pods Frameworks */,
+				570C6753A7363B9DFB884A33 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Per Diem App";
+			productName = "Per Diem App";
+			productReference = 69E04C8920EB285D00462729 /* Per Diem App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69E04C9E20EB285F00462729 /* Per Diem AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E04CB620EB285F00462729 /* Build configuration list for PBXNativeTarget "Per Diem AppTests" */;
+			buildPhases = (
+				B8AE6676D467434C8B0DD72E /* [CP] Check Pods Manifest.lock */,
+				69E04C9B20EB285F00462729 /* Sources */,
+				69E04C9C20EB285F00462729 /* Frameworks */,
+				69E04C9D20EB285F00462729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69E04CA120EB285F00462729 /* PBXTargetDependency */,
+			);
+			name = "Per Diem AppTests";
+			productName = "Per Diem AppTests";
+			productReference = 69E04C9F20EB285F00462729 /* Per Diem AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69E04CA920EB285F00462729 /* Per Diem AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69E04CB920EB285F00462729 /* Build configuration list for PBXNativeTarget "Per Diem AppUITests" */;
+			buildPhases = (
+				93377769620832A129B38C71 /* [CP] Check Pods Manifest.lock */,
+				69E04CA620EB285F00462729 /* Sources */,
+				69E04CA720EB285F00462729 /* Frameworks */,
+				69E04CA820EB285F00462729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69E04CAC20EB285F00462729 /* PBXTargetDependency */,
+			);
+			name = "Per Diem AppUITests";
+			productName = "Per Diem AppUITests";
+			productReference = 69E04CAA20EB285F00462729 /* Per Diem AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69E04C8120EB285D00462729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jason Claxton";
+				TargetAttributes = {
+					69E04C8820EB285D00462729 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					69E04C9E20EB285F00462729 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 69E04C8820EB285D00462729;
+					};
+					69E04CA920EB285F00462729 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 69E04C8820EB285D00462729;
+					};
+				};
+			};
+			buildConfigurationList = 69E04C8420EB285D00462729 /* Build configuration list for PBXProject "Per Diem App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69E04C8020EB285D00462729;
+			productRefGroup = 69E04C8A20EB285D00462729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69E04C8820EB285D00462729 /* Per Diem App */,
+				69E04C9E20EB285F00462729 /* Per Diem AppTests */,
+				69E04CA920EB285F00462729 /* Per Diem AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69E04C8720EB285D00462729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E04C9920EB285F00462729 /* LaunchScreen.storyboard in Resources */,
+				69E04CCA20EF1F2400462729 /* GoogleService-Info.plist in Resources */,
+				69E04C9620EB285F00462729 /* Assets.xcassets in Resources */,
+				69E04C9420EB285D00462729 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E04C9D20EB285F00462729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E04CA820EB285F00462729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19DF88C34532EB821DF4F52F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Per Diem App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21C39A79929B1E59548318AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AAPickerView/AAPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/CalendarDateRangePickerViewController/CalendarDateRangePickerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/FormValidatorSwift/FormValidatorSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/PDTSimpleCalendar/PDTSimpleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalendarDateRangePickerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FormValidatorSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDTSimpleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		570C6753A7363B9DFB884A33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93377769620832A129B38C71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Per Diem AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8AE6676D467434C8B0DD72E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Per Diem AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69E04C8520EB285D00462729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E04C9120EB285D00462729 /* SecondViewController.swift in Sources */,
+				69E04C8D20EB285D00462729 /* AppDelegate.swift in Sources */,
+				69E04C8F20EB285D00462729 /* FirstViewController.swift in Sources */,
+				69E04CC220ED591300462729 /* NewReportVC.swift in Sources */,
+				69E04CD120F076F200462729 /* Expense.swift in Sources */,
+				69E04CC820ED596C00462729 /* NewMileageVC.swift in Sources */,
+				69E04CCF20F04F4F00462729 /* Report.swift in Sources */,
+				69E04CD320F460AD00462729 /* ExpenseDetails.swift in Sources */,
+				69E04CC620ED595800462729 /* NewExpenseVC.swift in Sources */,
+				69E04CCC20F0350500462729 /* CustomCell.swift in Sources */,
+				69E04CC420ED593D00462729 /* NewCameraExpenseVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E04C9B20EB285F00462729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E04CA420EB285F00462729 /* Per_Diem_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69E04CA620EB285F00462729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E04CAF20EB285F00462729 /* Per_Diem_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69E04CA120EB285F00462729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69E04C8820EB285D00462729 /* Per Diem App */;
+			targetProxy = 69E04CA020EB285F00462729 /* PBXContainerItemProxy */;
+		};
+		69E04CAC20EB285F00462729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69E04C8820EB285D00462729 /* Per Diem App */;
+			targetProxy = 69E04CAB20EB285F00462729 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69E04C9220EB285D00462729 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E04C9320EB285D00462729 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69E04C9720EB285F00462729 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E04C9820EB285F00462729 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69E04CB120EB285F00462729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69E04CB220EB285F00462729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69E04CB420EB285F00462729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8521B0FF60659018696B0BBB /* Pods-Per Diem App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN53W959PS;
+				INFOPLIST_FILE = "Per Diem App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jay.Per-Diem-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69E04CB520EB285F00462729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F8A3C3C378EEFD633088C56 /* Pods-Per Diem App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN53W959PS;
+				INFOPLIST_FILE = "Per Diem App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jay.Per-Diem-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69E04CB720EB285F00462729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04EB1CC0E49BDC9AE4A28F8A /* Pods-Per Diem AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN53W959PS;
+				INFOPLIST_FILE = "Per Diem AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jay.Per-Diem-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Per Diem App.app/Per Diem App";
+			};
+			name = Debug;
+		};
+		69E04CB820EB285F00462729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 192985946C2B7E9198832901 /* Pods-Per Diem AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN53W959PS;
+				INFOPLIST_FILE = "Per Diem AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jay.Per-Diem-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Per Diem App.app/Per Diem App";
+			};
+			name = Release;
+		};
+		69E04CBA20EB285F00462729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB18543398E8AAA72190DB8 /* Pods-Per Diem AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN53W959PS;
+				INFOPLIST_FILE = "Per Diem AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jay.Per-Diem-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Per Diem App";
+			};
+			name = Debug;
+		};
+		69E04CBB20EB285F00462729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68DF1D165991948C29D324CC /* Pods-Per Diem AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN53W959PS;
+				INFOPLIST_FILE = "Per Diem AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jay.Per-Diem-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Per Diem App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69E04C8420EB285D00462729 /* Build configuration list for PBXProject "Per Diem App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E04CB120EB285F00462729 /* Debug */,
+				69E04CB220EB285F00462729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E04CB320EB285F00462729 /* Build configuration list for PBXNativeTarget "Per Diem App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E04CB420EB285F00462729 /* Debug */,
+				69E04CB520EB285F00462729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E04CB620EB285F00462729 /* Build configuration list for PBXNativeTarget "Per Diem AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E04CB720EB285F00462729 /* Debug */,
+				69E04CB820EB285F00462729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69E04CB920EB285F00462729 /* Build configuration list for PBXNativeTarget "Per Diem AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E04CBA20EB285F00462729 /* Debug */,
+				69E04CBB20EB285F00462729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69E04C8120EB285D00462729 /* Project object */;
+}
