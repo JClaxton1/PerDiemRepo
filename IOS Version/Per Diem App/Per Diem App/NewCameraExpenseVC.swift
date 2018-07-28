@@ -39,6 +39,9 @@ class NewCameraExpenseVC: UIViewController,ImagePickerDelegate, UITextFieldDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        date.delegate = self
+        
         let imagePickerController = ImagePickerController()
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)

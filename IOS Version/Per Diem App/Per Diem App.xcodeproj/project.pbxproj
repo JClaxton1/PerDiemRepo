@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6959EFBB21081ADF00F78619 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6959EFBA21081ADF00F78619 /* Settings.bundle */; };
+		6959EFBD21094BC100F78619 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6959EFBC21094BC100F78619 /* ProfileViewController.swift */; };
+		6959EFBF21096BDD00F78619 /* ReportDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6959EFBE21096BDD00F78619 /* ReportDetails.swift */; };
+		6959EFC12109878D00F78619 /* PageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6959EFC02109878D00F78619 /* PageOne.swift */; };
+		6959EFC3210AD1B600F78619 /* PageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6959EFC2210AD1B600F78619 /* PageTwo.swift */; };
+		6959EFC5210AD2C200F78619 /* PageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6959EFC4210AD2C200F78619 /* PageThree.swift */; };
 		69E04C8D20EB285D00462729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04C8C20EB285D00462729 /* AppDelegate.swift */; };
 		69E04C8F20EB285D00462729 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04C8E20EB285D00462729 /* FirstViewController.swift */; };
 		69E04C9120EB285D00462729 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04C9020EB285D00462729 /* SecondViewController.swift */; };
@@ -24,6 +30,7 @@
 		69E04CCF20F04F4F00462729 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CCE20F04F4F00462729 /* Report.swift */; };
 		69E04CD120F076F200462729 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CD020F076F200462729 /* Expense.swift */; };
 		69E04CD320F460AD00462729 /* ExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E04CD220F460AD00462729 /* ExpenseDetails.swift */; };
+		69F1589821069DBB00015030 /* MileageExpenseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F1589721069DBB00015030 /* MileageExpenseDetails.swift */; };
 		BAE2000EC5A4AB0BD0DC0F19 /* Pods_Per_Diem_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B1F3574AEE9BD8E8669380 /* Pods_Per_Diem_AppUITests.framework */; };
 		E539E5A4FBA24880547C0AD0 /* Pods_Per_Diem_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE7EB4CF5111937401B6AB8 /* Pods_Per_Diem_App.framework */; };
 		EFDC3EAE876238BB0E18738C /* Pods_Per_Diem_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB239BC88828ADC4847F9516 /* Pods_Per_Diem_AppTests.framework */; };
@@ -52,6 +59,12 @@
 		4EB18543398E8AAA72190DB8 /* Pods-Per Diem AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem AppUITests/Pods-Per Diem AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE7EB4CF5111937401B6AB8 /* Pods_Per_Diem_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Per_Diem_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DF1D165991948C29D324CC /* Pods-Per Diem AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem AppUITests/Pods-Per Diem AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6959EFBA21081ADF00F78619 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		6959EFBC21094BC100F78619 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6959EFBE21096BDD00F78619 /* ReportDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetails.swift; sourceTree = "<group>"; };
+		6959EFC02109878D00F78619 /* PageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOne.swift; sourceTree = "<group>"; };
+		6959EFC2210AD1B600F78619 /* PageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwo.swift; sourceTree = "<group>"; };
+		6959EFC4210AD2C200F78619 /* PageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThree.swift; sourceTree = "<group>"; };
 		69B1F3574AEE9BD8E8669380 /* Pods_Per_Diem_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Per_Diem_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E04C8920EB285D00462729 /* Per Diem App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Per Diem App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E04C8C20EB285D00462729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +89,7 @@
 		69E04CCE20F04F4F00462729 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		69E04CD020F076F200462729 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		69E04CD220F460AD00462729 /* ExpenseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetails.swift; sourceTree = "<group>"; };
+		69F1589721069DBB00015030 /* MileageExpenseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageExpenseDetails.swift; sourceTree = "<group>"; };
 		8521B0FF60659018696B0BBB /* Pods-Per Diem App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App.debug.xcconfig"; sourceTree = "<group>"; };
 		8F8A3C3C378EEFD633088C56 /* Pods-Per Diem App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Per Diem App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App.release.xcconfig"; sourceTree = "<group>"; };
 		CB239BC88828ADC4847F9516 /* Pods_Per_Diem_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Per_Diem_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +163,7 @@
 			children = (
 				69E04CCD20F04D1900462729 /* Models */,
 				69E04C8C20EB285D00462729 /* AppDelegate.swift */,
+				6959EFBC21094BC100F78619 /* ProfileViewController.swift */,
 				69E04CD220F460AD00462729 /* ExpenseDetails.swift */,
 				69E04C8E20EB285D00462729 /* FirstViewController.swift */,
 				69E04C9020EB285D00462729 /* SecondViewController.swift */,
@@ -162,6 +177,11 @@
 				69E04CC520ED595800462729 /* NewExpenseVC.swift */,
 				69E04CC720ED596C00462729 /* NewMileageVC.swift */,
 				69E04CC920EF1F2300462729 /* GoogleService-Info.plist */,
+				69F1589721069DBB00015030 /* MileageExpenseDetails.swift */,
+				6959EFBE21096BDD00F78619 /* ReportDetails.swift */,
+				6959EFC4210AD2C200F78619 /* PageThree.swift */,
+				6959EFC02109878D00F78619 /* PageOne.swift */,
+				6959EFC2210AD1B600F78619 /* PageTwo.swift */,
 			);
 			path = "Per Diem App";
 			sourceTree = "<group>";
@@ -189,6 +209,7 @@
 			children = (
 				69E04CD020F076F200462729 /* Expense.swift */,
 				69E04CCE20F04F4F00462729 /* Report.swift */,
+				6959EFBA21081ADF00F78619 /* Settings.bundle */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,6 +335,7 @@
 			files = (
 				69E04C9920EB285F00462729 /* LaunchScreen.storyboard in Resources */,
 				69E04CCA20EF1F2400462729 /* GoogleService-Info.plist in Resources */,
+				6959EFBB21081ADF00F78619 /* Settings.bundle in Resources */,
 				69E04C9620EB285F00462729 /* Assets.xcassets in Resources */,
 				69E04C9420EB285D00462729 /* Main.storyboard in Resources */,
 			);
@@ -362,32 +384,44 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Per Diem App/Pods-Per Diem App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AAPickerView/AAPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/BmoViewPager/BmoViewPager.framework",
 				"${BUILT_PRODUCTS_DIR}/CalendarDateRangePickerViewController/CalendarDateRangePickerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/FormValidatorSwift/FormValidatorSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageLoader/ImageLoader.framework",
 				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/PDTSimpleCalendar/PDTSimpleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SimplePDF/SimplePDF.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BmoViewPager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalendarDateRangePickerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FormValidatorSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageLoader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDTSimpleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimplePDF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -467,17 +501,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F1589821069DBB00015030 /* MileageExpenseDetails.swift in Sources */,
 				69E04C9120EB285D00462729 /* SecondViewController.swift in Sources */,
 				69E04C8D20EB285D00462729 /* AppDelegate.swift in Sources */,
 				69E04C8F20EB285D00462729 /* FirstViewController.swift in Sources */,
+				6959EFBF21096BDD00F78619 /* ReportDetails.swift in Sources */,
 				69E04CC220ED591300462729 /* NewReportVC.swift in Sources */,
 				69E04CD120F076F200462729 /* Expense.swift in Sources */,
 				69E04CC820ED596C00462729 /* NewMileageVC.swift in Sources */,
 				69E04CCF20F04F4F00462729 /* Report.swift in Sources */,
+				6959EFC12109878D00F78619 /* PageOne.swift in Sources */,
 				69E04CD320F460AD00462729 /* ExpenseDetails.swift in Sources */,
 				69E04CC620ED595800462729 /* NewExpenseVC.swift in Sources */,
+				6959EFBD21094BC100F78619 /* ProfileViewController.swift in Sources */,
+				6959EFC5210AD2C200F78619 /* PageThree.swift in Sources */,
 				69E04CCC20F0350500462729 /* CustomCell.swift in Sources */,
 				69E04CC420ED593D00462729 /* NewCameraExpenseVC.swift in Sources */,
+				6959EFC3210AD1B600F78619 /* PageTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DN53W959PS;
 				INFOPLIST_FILE = "Per Diem App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -673,6 +714,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DN53W959PS;
 				INFOPLIST_FILE = "Per Diem App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

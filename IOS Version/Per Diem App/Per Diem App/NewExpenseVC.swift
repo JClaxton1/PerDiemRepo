@@ -16,9 +16,12 @@ import GooglePlaces
 import GooglePlacePicker
 import PDTSimpleCalendar
 import FormValidatorSwift
+import ImagePicker
 
 
-class NewExpenseVC: UIViewController, UITextFieldDelegate,GMSPlacePickerViewControllerDelegate,PDTSimpleCalendarViewDelegate{
+
+class NewExpenseVC: UIViewController, UITextFieldDelegate,GMSPlacePickerViewControllerDelegate,PDTSimpleCalendarViewDelegate, ImagePickerDelegate{
+
 
     
     @IBOutlet weak var headerView: UIView!
@@ -31,6 +34,10 @@ class NewExpenseVC: UIViewController, UITextFieldDelegate,GMSPlacePickerViewCont
     var ref: DatabaseReference!
     var reports:[Report] = []
     var isKeyboardAppear = false
+    
+    @IBOutlet weak var imageView: UIImageView!
+    var myImage: UIImage!
+    var resultsText = ""
 
     
     override func viewDidLoad() {
@@ -250,6 +257,11 @@ class NewExpenseVC: UIViewController, UITextFieldDelegate,GMSPlacePickerViewCont
         headerView.layer.rasterizationScale =  headerView.layer.contentsScale;
     }
 
+    @IBAction func takePhoto(_ sender: Any) {
+        let imagePickerController = ImagePickerController()
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
     
     //Configuring Picker
     func configPicker() {
@@ -340,5 +352,23 @@ class NewExpenseVC: UIViewController, UITextFieldDelegate,GMSPlacePickerViewCont
         
         self.date.text = todaysDate
         controller.dismiss(animated: true, completion: nil)
+    }
+    
+    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        
+        imageView.image = images[0]
+        myImage = images[0]
+        
+    }
+    
+    func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        
     }
 }

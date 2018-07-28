@@ -21,7 +21,11 @@ pod 'GoogleMaps'
 pod 'ImagePicker'
 pod 'Firebase/Core'
 pod 'Firebase/MLVision'
-
+pod 'ImageLoader'
+pod 'PopupDialog'
+pod 'BmoViewPager'
+pod 'Charts'
+pod 'SimplePDF'
 
   target 'Per Diem AppTests' do
     inherit! :search_paths

@@ -1,6 +1,11 @@
 PODS:
   - AAPickerView (0.1.2)
+  - BmoViewPager (4.1.3)
   - CalendarDateRangePickerViewController (0.1.0)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - DynamicBlurView (2.0.2)
   - Firebase/Auth (5.4.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.2)
@@ -89,6 +94,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.15)
   - GTMSessionFetcher/Full (1.1.15):
     - GTMSessionFetcher/Core (= 1.1.15)
+  - ImageLoader (0.14.0)
   - ImagePicker (3.0.0)
   - leveldb-library (1.20)
   - nanopb (0.3.8):
@@ -97,11 +103,16 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - PDTSimpleCalendar (0.9.1)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
   - Protobuf (3.6.0)
+  - SimplePDF (3.0.0)
 
 DEPENDENCIES:
   - AAPickerView
+  - BmoViewPager
   - CalendarDateRangePickerViewController
+  - Charts
   - Firebase/Core
   - Firebase/Database
   - Firebase/MLVision
@@ -112,13 +123,19 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - ImageLoader
   - ImagePicker
   - PDTSimpleCalendar
+  - PopupDialog
+  - SimplePDF
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AAPickerView
+    - BmoViewPager
     - CalendarDateRangePickerViewController
+    - Charts
+    - DynamicBlurView
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -139,15 +156,21 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - ImageLoader
     - ImagePicker
     - leveldb-library
     - nanopb
     - PDTSimpleCalendar
+    - PopupDialog
     - Protobuf
+    - SimplePDF
 
 SPEC CHECKSUMS:
   AAPickerView: 6a22bdff279b5e21ca51b4e6fe015599b20a81ad
+  BmoViewPager: cf2e3c251f64872b5c8163365a620f2ef2fccb74
   CalendarDateRangePickerViewController: 9e82a36a21ad7338f4e21a314469bfabe1f738fb
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
@@ -168,12 +191,15 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  ImageLoader: 56f57e35d6ed26a74183dc2e472133b4b22eb7b9
   ImagePicker: 973953c25960fe04729a7082a56194321c6762d2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
+  SimplePDF: 903143ede36965886997a5c1bc6b8940b082ba20
 
-PODFILE CHECKSUM: 1dde548f171708dbf832a047999127849865e66e
+PODFILE CHECKSUM: 57a34a0ef60b15cebf4b91131e23021d5f654cdd
 
 COCOAPODS: 1.5.3

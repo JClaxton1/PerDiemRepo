@@ -25,6 +25,7 @@ import com.example.jay.theperdiemapp.fragments.ExpenseReportListFragment;
 import com.example.jay.theperdiemapp.models.Report;
 import com.firebase.ui.auth.AuthUI;
 import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton mFabMileage;
     FloatingActionButton mFabEdit;
     FloatingActionButton mFabReport;
+    FloatingActionMenu fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -170,22 +172,28 @@ public class MainActivity extends AppCompatActivity {
          mFabMileage = findViewById(R.id.menu_item_mileage);
          mFabEdit = findViewById(R.id.manual_entry);
          mFabReport = findViewById(R.id.create_new_report);
+         fab = findViewById(R.id.fab);
+
+        fab.setClosedOnTouchOutside(true);
+
 
 
 
         mFabCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 if(!reportsArrayList.isEmpty()) {
                     Intent intent = new Intent(getBaseContext(), CreateNewActivity.class);
 
                     String message = "Camera";
                     intent.putExtra(EXTRA_MESSAGE, message);
                     startActivity(intent);
+
                 }else{
                     AlertNoReportMade();
                 }
+                fab.close(true);
+
 
 
             }
@@ -195,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(!reportsArrayList.isEmpty()) {
+
                     Intent intent = new Intent(getBaseContext(), CreateNewActivity.class);
 
                     String message = "Mileage";
@@ -203,7 +212,9 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     AlertNoReportMade();
                 }
+                fab.close(true);
             }
+
         });
 
         mFabEdit.setOnClickListener(new View.OnClickListener() {
@@ -215,9 +226,11 @@ public class MainActivity extends AppCompatActivity {
                     String message = "Expense";
                     intent.putExtra(EXTRA_MESSAGE, message);
                     startActivity(intent);
+
                 }else{
                     AlertNoReportMade();
                 }
+                fab.close(true);
             }
         });
 
@@ -228,6 +241,8 @@ public class MainActivity extends AppCompatActivity {
                 String message = "Report";
                 intent.putExtra(EXTRA_MESSAGE, message);
                 startActivity(intent);
+                fab.close(true);
+
 
             }
         });
@@ -280,6 +295,7 @@ public class MainActivity extends AppCompatActivity {
                     String message = "Expense";
                     intent.putExtra(EXTRA_MESSAGE, message);
                     startActivity(intent);
+
                 }else{
                     AlertNoReportMade();
                 }

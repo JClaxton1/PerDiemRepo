@@ -32,6 +32,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.delegate = self
         tableView.dataSource = self
         getData()
+        signInUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +52,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let camera = FloatyItem()
         camera.hasShadow = false
         camera.iconImageView.bounds = camera.bounds
-        camera.title = "Camera"
+        camera.title = "New Receipt Photo"
         camera.icon = UIImage(named: "005-camera")
         camera.handler = { item in
             self.performSegue(withIdentifier: "toNewCameraExpense", sender: self)
@@ -69,7 +70,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let manual = FloatyItem()
         manual.hasShadow = false
         manual.iconImageView.bounds = manual.bounds
-        manual.title = "Manual"
+        manual.title = "New Expense"
         manual.icon = UIImage(named: "003-bill")
         manual.handler = { item in
             self.performSegue(withIdentifier: "toNewExpense", sender: self)
@@ -114,9 +115,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         SelectedExpense = self.expenses[indexPath.row]
+        if SelectedExpense.expenseName.starts(with: "Mile"){
+            self.performSegue(withIdentifier: "toMileageDetails", sender: self)
+        }else{
+            self.performSegue(withIdentifier: "toExpenseDetails", sender: self)
+        }
         
-       self.performSegue(withIdentifier: "toExpenseDetails", sender: self)
-                
+        
         print(expenses[indexPath.row].expenseName)
     }
     
@@ -177,14 +182,55 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             vc?.name = SelectedExpense.expenseName
             vc?.memo = SelectedExpense.expenseMemo
             vc?.date = SelectedExpense.expenseDate
+            vc?.category = SelectedExpense.expenseCategory
+            vc?.report = SelectedExpense.associatedReport
             
            let temp:String = "$"+String(format:"%.2f", SelectedExpense.expenseTotal)
             
             vc?.cost = temp
+        } else if segue.destination is MileageExpenseDetails {
+            let vc = segue.destination as? MileageExpenseDetails
+            vc?.toAddress = SelectedExpense.expenseName
+            vc?.fromAddress = SelectedExpense.mileageFromAddress
+            vc?.date = SelectedExpense.expenseDate
+            vc?.perMile = SelectedExpense.mileagePerMileRate.description
+            vc?.totalMiles = SelectedExpense.mileageTotalMiles.description
+            vc?.totalCost = SelectedExpense.expenseTotal.description
+            vc?.category = SelectedExpense.expenseCategory
+            vc?.report = SelectedExpense.associatedReport
+            vc?.expenseID = SelectedExpense.expenseID
+
         }
         
         
         
+    }
+    
+    func signInUI(){
+        let providers: [FUIAuthProvider] = [
+            FUIGoogleAuth()
+        ]
+        self.authUI?.providers = providers
+        
+        func application(_ app: UIApplication, open url: URL,
+                         options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+            let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
+            if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+                return true
+            }
+            // other URL handling goes here.
+            return false
+        }
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+            userNameField.text = Auth.auth().currentUser?.displayName
+            userEmailFiield.text = Auth.auth().currentUser?.email
+            getData()
+        } else {
+            let authViewController = authUI?.authViewController()
+            self.present(authViewController!, animated:true, completion:nil)
+            Floaty.global.hide()
+        }
     }
 
 }

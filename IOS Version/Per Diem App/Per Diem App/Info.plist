@@ -16,10 +16,30 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.787611763834-fpk2fasntdlnm80ibm011t55gecmts5i</string>
+			</array>
+		</dict>
+		<dict/>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>get Photos</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Show your location on the map</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Get Photos</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -51,11 +71,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Show your location on the map</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Get Photos</string>
-	<key>NSCameraUsageDescription</key>
-	<string>get Photos</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Find Current Place</string>
 </dict>
 </plist>

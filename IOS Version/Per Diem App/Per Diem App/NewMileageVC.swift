@@ -34,6 +34,7 @@ class NewMileageVC: UIViewController, UITextFieldDelegate,GMSPlacePickerViewCont
     var ref: DatabaseReference!
     var reports:[Report] = []
     var isKeyboardAppear = false
+    var rate = 1.0
     
     var text = ""
     var place1: CLLocationCoordinate2D?
@@ -50,8 +51,8 @@ class NewMileageVC: UIViewController, UITextFieldDelegate,GMSPlacePickerViewCont
         toAddressTextFeild.delegate = self
         fromAddressTextFeild.delegate = self
         dateTextFeild.delegate = self
-        perMileTextFeild.text = "1"
-        
+        //perMileTextFeild.text = "1"
+        getDefaultRate()
 
     }
     
@@ -144,8 +145,8 @@ getData()
         
         if place1 != nil && place2 != nil{
 
-            var rate = perMileTextFeild.text
-            perMileRate = Double(rate!)
+            
+            perMileRate = Double(rate)
             
             let coordinate0 = CLLocation(latitude: (place1?.latitude)!, longitude: (place1?.longitude)!)
             let coordinate1 = CLLocation(latitude: (place2?.latitude)!, longitude: (place2?.longitude)!)
@@ -162,6 +163,8 @@ getData()
         }
     }
     
+    
+
     
     func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
         viewController.dismiss(animated: true, completion: nil)
@@ -188,16 +191,14 @@ getData()
     func configPicker() {
         catPicker.pickerType = .StringPicker
         
-        let stringData = [ "Computer Related Equiptment", "Education, Research, and Conferences",
-                           "Employee Incentives and Gifts","Food/Snacks/Beverage - Not Show/Travel Related","GST/HST Tax",
-                           "Information Services","Lodging","Marketing Expense","Meals-Travel", "Mileage","Office Supplies","Research and Development",
-                           "Show Lodging","Show Meals","Show Transportation","Taxes and Licenses","Transportation - Non Show","Travel - Non Show","Travel - Sales",
-                           "Travel Advance"]
+        let stringData = ["Mileage"]
         catPicker.stringPickerData = stringData
         catPicker.pickerRow.font = UIFont(name: "American Typewriter", size: 30)
+       
         
         catPicker.toolbar.barTintColor = .darkGray
         catPicker.toolbar.tintColor = .black
+        catPicker.text = "Mileage"
         
         catPicker.stringDidChange = { index in
             
@@ -322,7 +323,7 @@ getData()
             let ID = toAddress! + " \(dateString)"
             
             
-            let expense = Expense(ExpenseID: ID, ExpenseName: toAddress, ExpenseTotal: expenseTotalCost, ExpenseDate: expenseDate, ExpenseLocation: fromAddress, ExpenseMemo: "None Provided Mileage", ExpenseCategory: cat, AddressToImage: "None Provided", AssociatedReport: selectedReport?.reportID, MileageFromAddress: fromAddress, MileageToAddress: expenseDistance?.description, MileagePerMileRate: 1.00, MileageTotalMiles: expenseTotalCost)
+            let expense = Expense(ExpenseID: ID, ExpenseName: toAddress, ExpenseTotal: expenseTotalCost, ExpenseDate: expenseDate, ExpenseLocation: fromAddress, ExpenseMemo: "None Provided Mileage", ExpenseCategory: cat, AddressToImage: "None Provided", AssociatedReport: selectedReport?.reportID, MileageFromAddress: fromAddress, MileageToAddress: expenseDistance?.description, MileagePerMileRate: rate, MileageTotalMiles: expenseTotalCost)
             
             var ref: DatabaseReference!
             ref = Database.database().reference()
@@ -357,5 +358,20 @@ getData()
         }
         
         
+    }
+    func getDefaultRate(){
+        //Get the defaults
+        let defaults = UserDefaults.standard
+        if let ratein = defaults.string(forKey: "per_mile_preference"){
+            perMileTextFeild.text = ratein
+            
+            let myFloat = (ratein as NSString).doubleValue
+            rate = myFloat
+
+        } else{
+            perMileTextFeild.text = "1.0"
+            rate = 1.0
+        }
+
     }
 }

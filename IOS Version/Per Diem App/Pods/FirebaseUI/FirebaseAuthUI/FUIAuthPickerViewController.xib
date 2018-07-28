@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,7 +19,23 @@
         <view contentMode="scaleToFill" id="kfP-Vq-eU2">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="007-invoice" translatesAutoresizingMaskIntoConstraints="NO" id="FUb-26-TpP">
+                    <rect key="frame" x="67" y="80" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="Pvv-X3-y7y"/>
+                        <constraint firstAttribute="width" constant="240" id="WA3-Au-GxK"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FUb-26-TpP" firstAttribute="centerY" secondItem="kfP-Vq-eU2" secondAttribute="centerY" multiplier="0.6" id="2v5-9f-0eN"/>
+                <constraint firstItem="FUb-26-TpP" firstAttribute="centerX" secondItem="kfP-Vq-eU2" secondAttribute="centerX" id="Fda-8u-d9s"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="007-invoice" width="1067" height="1067"/>
+    </resources>
 </document>

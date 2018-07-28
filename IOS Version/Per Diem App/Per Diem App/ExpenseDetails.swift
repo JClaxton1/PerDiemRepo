@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import AAPickerView
+import Floaty
+import ImageLoader
 
 
 class ExpenseDetails: UIViewController {
@@ -26,34 +28,31 @@ class ExpenseDetails: UIViewController {
     @IBOutlet weak var categoryPicker: AAPickerView!
     @IBOutlet weak var reportPicker: AAPickerView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Floaty.global.hide()
         nameField.text = name
         memoField.text = memo
         dateField.text = date
         totalCostField.text = cost
-        configPicker()
+        categoryPicker.text = category
+        reportPicker.text = report
+       
+        reportPicker.isEnabled = false
+        categoryPicker.isEnabled = false
+        //configPicker()
     }
     override func viewWillAppear(_ animated: Bool) {
-        
     }
     
-    func configPicker() {
-        categoryPicker.pickerType = .StringPicker
-        
-        let stringData = ["AVFoundation","Accelerate","AddressBook","AddressBookUI","AssetsLibrary"]
-        categoryPicker.stringPickerData = stringData
-        categoryPicker.pickerRow.font = UIFont(name: "American Typewriter", size: 30)
-        
-        categoryPicker.toolbar.barTintColor = .darkGray
-        categoryPicker.toolbar.tintColor = .black
-        
-        categoryPicker.stringDidChange = { index in
-            
-            print("selectedString ", stringData[index])
-            
-            
-        }
+    @IBAction func deleteButton(_ sender: Any) {
     }
+    
+    
+    @IBAction func updateButton(_ sender: Any) {
+    }
+    
+    
+    
+
 }

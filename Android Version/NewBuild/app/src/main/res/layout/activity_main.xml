@@ -95,7 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_005_camera"
-            app:fab_label="Camera"
+            app:fab_label="New Receipt Photo"
             app:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
@@ -111,7 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_003_bill"
-            app:fab_label="Expense"
+            app:fab_label="New Expense"
             app:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
